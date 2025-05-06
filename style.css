@@ -1,0 +1,363 @@
+/* Grundinställningar */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+/* Toppmeny */
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #00000020;
+    padding: 10px 20px;
+}
+
+
+
+/* Köp-knappen */
+.product button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.product button:hover {
+    background-color: #333333;
+}
+
+/* Varukorgens popup */
+#cart-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+#cart-items {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+#cart-items li {
+    background-color: #ffffff;
+    border: 1px solid #000;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    color: black;
+}
+
+.cart-buttons button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+.cart-buttons button:hover {
+    background-color: #333;
+}
+.login-form {
+    width: 80%;            /* Gör formuläret 80% av sidans bredd */
+    max-width: 500px;      /* Maxbredd på 500px så det inte blir för stort */
+    margin: 60px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 25px;
+    background-color: #ffffffdd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #aaa;
+}
+
+.login-form button {
+    width: 100%;           /* Gör input och knapp lika breda som formuläret */
+    padding: 12px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+.login-form input {
+    padding: 10px;
+    font-size: 16px;
+}
+
+.login-form button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-form button:hover {
+    background-color: #333;
+}
+
+#login-message {
+    margin-top: 10px;
+    color: red;
+    font-weight: bold;
+}
+/* Grundinställningar */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+/* Toppmeny */
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #00000020;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+}
+
+/* Vänster sida på toppmenyn */
+.left-side h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+/* Höger sida på toppmenyn */
+.right-side {
+    display: flex;
+    gap: 10px;
+}
+
+/* Varukorg och Logga in-knappar */
+.cart-btn, .login-btn {
+    background-color: white;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cart-btn:hover, .login-btn:hover {
+    background-color: #dddddd;
+}
+
+/* Produkterna */
+.products {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+/* Enskild produkt */
+.product {
+    background-color: #00000020;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.145);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+}
+
+/* Bilden */
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* Produktens rubrik */
+.product h2 {
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+/* Produktens text */
+.product p {
+    color: #000000;
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+/* Köp-knappen */
+.product button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.product button:hover {
+    background-color: #333333;
+}
+
+/* Varukorgens popup */
+.cart-items-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #ccc;
+}
+
+.cart-items-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#cart-items {
+    list-style-type: none;
+    padding: 0;
+}
+
+#cart-items li {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+#cart-items img {
+    width: 100px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+#cart-items .cart-item-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cart-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.cart-buttons button {
+    padding: 12px 20px;
+    font-size: 16px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cart-buttons button:hover {
+    background-color: #444;
+}
+
+.footer {
+    background-color: #00000010;
+    color: rgb(0, 0, 0);
+    padding: 30px;
+    text-align: center;
+}
+
+.footer a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.filter-bar {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px;
+}
+
+#search-input,
+#sort-select {
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ffffff;
+}
+.footer {
+    background-color: #00000020;
+    padding: 20px;
+    margin-top: 40px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    border-top: 1px solid #ccc;
+}
+
+.footer a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+/* Gör att footern hamnar längst ner även vid lite innehåll */
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+.footer {
+    background-color: #00000020;
+    text-align: center;
+    padding: 20px;
+}

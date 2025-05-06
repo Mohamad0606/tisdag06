@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <title>Varukorg</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="cart.js" defer></script>
+</head>
+<body>
+
+<header class="topbar">
+    <div class="left-side">
+        <h1>Varukorg</h1>
+    </div>
+    <div class="right-side">
+        <button class="cart-btn" onclick="window.location.href='cart.html'">
+            🛒 Varukorg <span id="cart-count">0</span>
+        </button>
+        <button class="login-btn" onclick="window.location.href='login.html'">
+            🔐 Logga in
+        </button>
+    </div>
+</header>
+
+<main>
+    <div class="cart-items-container">
+        <h2>Din Varukorg</h2>
+        <ul id="cart-items"></ul>
+        <div class="cart-buttons">
+            <button onclick="window.location.href='index.html'">Tillbaka till produkterna</button>
+            <button onclick="fortsattTillKassa()">Fortsätt till kassan</button>
+            <button onclick="tomVarukorg()">Töm varukorgen</button>
+        </div>
+    </div>
+</main>
+
+<footer class="footer">
+    <div class="contact-section">
+        <h2>Kontakta mig</h2>
+        <p>📧 E-post: <a href="mailto:kontakt@bilbutiken.se">kontakt@bilbutiken.se</a></p>
+        <p>📞 Telefon: <a href="tel:+46701234567">070-123 45 67</a></p>
+        <p>📍 Adress: Vasagatan 13, Stockholm</p>
+    </div>
+</footer>
+
+</body>
+</html>

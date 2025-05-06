@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <title>Logga In</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="login.js" defer></script>
+</head>
+<body>
+    <header class="topbar">
+        <div class="left-side">
+            <h1>Logga In</h1>
+        </div>
+        <div class="right-side">
+            <button class="cart-btn" onclick="window.location.href='cart.html'">
+                🛒 Varukorg <span id="cart-count">0</span>
+            </button>
+            <button onclick="tillbakaTillStart()">🏠 Start</button>
+        </div>
+    </header>    
+
+    <main class="login-form">
+        <h2>Logga In</h2>
+        <input type="text" id="login-username" placeholder="E-post eller telefonnummer">
+        <input type="password" id="login-password" placeholder="Lösenord">
+        <button onclick="loggaIn()">Logga In</button>
+
+        <h2>Skapa Konto</h2>
+        <input type="text" id="register-username" placeholder="E-post eller telefonnummer">
+        <input type="password" id="register-password" placeholder="Lösenord">
+        <button onclick="skapaKonto()">Skapa Konto</button>
+
+        <p id="login-message"></p>
+    </main>
+     <!-- Kontaktsektion -->
+<footer class="footer">
+    <div class="contact-section">
+        <h2>Kontakta mig</h2>
+        <p>📧 E-post: <a href="mailto:kontakt@bilbutiken.se">kontakt@bilbutiken.se</a></p>
+        <p>📞 Telefon: <a href="tel:+46701234567">070-123 45 67</a></p>
+        <p>📍 Adress: Vasagatan 13, Stockholm</p>
+    </div>
+</footer>
+
+</body>
+</html>

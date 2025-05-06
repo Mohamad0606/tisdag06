@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <title>Produkter</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- Toppmeny -->
+    <header class="topbar">
+        <div class="left-side">
+            <h1>Produkter</h1>
+        </div>
+        <div class="right-side">
+            <button class="cart-btn" onclick="window.location.href='cart.html'">
+                🛒 Varukorg <span id="cart-count">0</span>
+            </button>
+            <button class="login-btn" onclick="window.location.href='login.html'">
+                🔐 Logga in
+            </button>
+        </div>
+    </header>
+
+    <div id="welcome-message" style="text-align: center; margin-top: 10px; font-weight: bold;"></div> 
+
+    <!-- Filter- och sökfält -->
+    <div class="filter-bar">
+        <input type="text" id="search-input" placeholder="Sök bil...">
+        <select id="sort-select">
+            <option value="none">Sortera efter</option>
+            <option value="asc">Pris: Lägst först</option>
+            <option value="desc">Pris: Högst först</option>
+        </select>
+    </div>
+
+    <!-- Produkterna -->
+    <div class="products">
+        <div class="product">
+            <h2>Rolls Royce Cullinan</h2>  
+            <img src="img/R-R-C.webp" alt="Rolls Royce Cullinan">
+            <p>Pris: 5 999 000 sek</p>
+            <button onclick="kopProdukt('Rolls Royce Cullinan', 'img/R-R-C.webp')">Köp</button>
+        </div>
+
+        <div class="product">
+            <h2>Lamborghini Huracan</h2>  
+            <img src="img/L-H.webp" alt="Lamborghini Huracan">
+            <p>Pris: 3 419 900 SEK</p>
+            <button onclick="kopProdukt('Lamborghini Huracan', 'img/L-H.webp')">Köp</button>
+        </div>
+
+        <div class="product">
+            <h2>Lambhoghini Urus</h2>  
+            <img src="img/L-U.webp" alt="Lambhoghini Urus">
+            <p>Pris: 3 120 000 sek</p>
+            <button onclick="kopProdukt('Lambhoghini Urus', 'img/L-U.webp')">Köp</button>
+        </div>
+
+        <div class="product">
+            <h2>Mercedes Benz G63</h2>  
+            <img src="img/M-B-G63.webp" alt="Mercedes Benz G63">
+            <p>Pris: 2 199 000 sek</p>
+            <button onclick="kopProdukt('Mercedes Benz G63', 'img/M-B-G63.webp')">Köp</button>
+        </div>
+
+        <div class="product">
+            <h2>Corvette C8</h2>  
+            <img src="img/C-C8.webp" alt="Corvette C8">
+            <p>Pris: 1 591 850 sek</p>
+            <button onclick="kopProdukt('Corvette C8', 'img/C-C8.webp')">Köp</button>
+        </div>
+
+        <div class="product">
+            <h2>M_Benz G63 Brabus</h2>  
+            <img src="img/M-B-G63-B.webp" alt="M_B G63 Brabus">
+            <p>Pris: 9 000 000 sek</p>
+            <button onclick="kopProdukt('M_B G63 Brabus', 'img/M-B-G63-B.webp')">Köp</button>
+        </div>
+
+        <div class="product">
+            <h2>Porsche 911</h2>  
+            <img src="img/P911.webp" alt="Porsche 911">
+            <p>Pris: 2 660 000 kr</p>
+            <button onclick="kopProdukt('Porsche 911', 'img/P911.webp')">Köp</button>
+        </div>
+
+        <div class="product">
+            <h2>Ferrari F8</h2>  
+            <img src="img/F-F8.webp" alt="Ferrari F8">
+            <p>Pris: 4 495 000 kr</p>
+            <button onclick="kopProdukt('Ferrari F8', 'img/F-F8.webp')">Köp</button>
+        </div>
+    </div>
+
+    <!-- Varukorg-popup -->
+    <div id="cart-popup" class="cart-popup">
+        <div class="cart-content">
+            <h2>Din Varukorg</h2>
+            <ul id="cart-items"></ul>
+            <div class="cart-buttons">
+                <button onclick="stangVarukorg()">Stäng</button>
+                <button onclick="goBack()">Tillbaka</button>
+                <button onclick="fortsattTillKassa()">Fortsätt till kassan</button>
+                <button onclick="window.location.href='login.html'">Logga in</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Kontaktsektion -->
+    <footer class="footer">
+        <div class="contact-section">
+            <h2>Kontakta mig</h2>
+            <p>📧 E-post: <a href="mailto:kontakt@bilbutiken.se">kontakt@bilbutiken.se</a></p>
+            <p>📞 Telefon: <a href="tel:+46701234567">070-123 45 67</a></p>
+            <p>📍 Adress: Vasagatan 13, Stockholm</p>
+        </div>
+    </footer>
+
+</body>
+</html>
